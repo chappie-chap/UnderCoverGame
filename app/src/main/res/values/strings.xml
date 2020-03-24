@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Alien">Alien</string>
+    <string name="Astronaut1">Astronot 1</string>
+    <string name="Jurusan">Jurusan :</string>
+    <string name="angkatan">2016</string>
+    <string name="angkatan1">Angkatan :</string>
+    <string name="app_name">Galaxy</string>
+    <string name="astronaut2">Astronot 2</string>
+    <string name="batal">Batal</string>
+    <string name="bcknumber">bckNumber</string>
+    <string name="bg">bg</string>
+    <string name="deskripsi">deskripsi</string>
+    <string name="exit_app">Keluar Aplikasi</string>
+    <string name="infotbl">infotbl</string>
+    <string name="jurusan">Pendidikan Guru Sekolah Dasar</string>
+    <string name="kampus">Kampus :</string>
+    <string name="kelompok_min">Buatlah Kelompok 4–8 Orang</string>
+    <string name="mahasiswa">Mahasiswa</string>
+    <string name="message_exit">Yakin ingin menutup aplikasi ?</string>
+    <string name="name_owner">Name :</string>
+    <string name="number">1</string>
+    <string name="ok">OK</string>
+    <string name="ownername">Lintang Ayu Fitriyani</string>
+    <string name="roketimg">roketimg</string>
+    <string name="sampleText">sample text</string>
+    <string name="sb_text">4</string>
+    <string name="slide">slider</string>
+    <string name="tempat_tanggal_lahir">Tempat, Tanggal Lahir :</string>
+    <string name="title">title</string>
+    <string name="ttl">Ponorogo, 26 Januari 1999</string>
+    <string name="tunjukkan_peran">Tunjukkan Peran</string>
+    <string name="univ">Universitas Negeri Surabaya</string>
+    <string name="version">Version</string>
+    <string name="tujuan">Tujuan</string>
+</resources>

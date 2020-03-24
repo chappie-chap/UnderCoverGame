@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/dtl_imgBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/dtl_planetImg"
+            android:maxWidth="240dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dtl_bckDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/table"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:textSize="24sp"
+                android:id="@+id/dtl_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/arlrdbd"
+                app:layout_constraintEnd_toEndOf="@+id/dtl_bckDesc"
+                app:layout_constraintStart_toStartOf="@+id/dtl_bckDesc"
+                app:layout_constraintTop_toTopOf="@+id/dtl_bckDesc"/>
+
+            <ScrollView
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dtl_bckDesc"
+                app:layout_constraintEnd_toEndOf="@+id/dtl_bckDesc"
+                app:layout_constraintStart_toStartOf="@+id/dtl_bckDesc"
+                app:layout_constraintTop_toBottomOf="@+id/dtl_Title">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:textSize="20sp"
+                    android:id="@+id/dtl_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arlrdbd"/>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
