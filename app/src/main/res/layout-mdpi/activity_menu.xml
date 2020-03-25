@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/backgroundMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    
+    <ImageView
+        android:id="@+id/btn_materi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/materi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"/>
+    
+    <ImageView
+        android:id="@+id/btn_game"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/game"
+        app:layout_constraintEnd_toEndOf="@+id/btn_materi"
+        app:layout_constraintStart_toStartOf="@+id/btn_materi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_materi"/>
+    
+    <ImageView
+        android:id="@+id/btn_caraMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cara_bermain"
+        app:layout_constraintEnd_toEndOf="@+id/btn_game"
+        app:layout_constraintStart_toStartOf="@+id/btn_game"
+        app:layout_constraintTop_toBottomOf="@+id/btn_game"/>
+    
+    <ImageView
+        android:id="@+id/btn_info"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/informasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <ImageView
+        android:id="@+id/btn_closeMenu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.22"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

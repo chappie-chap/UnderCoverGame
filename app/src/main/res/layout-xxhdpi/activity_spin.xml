@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutSpin"
+    android:background="@drawable/bg2"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent">
+    
+        <ImageView
+            android:id="@+id/imgBackWheel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/bg_spin1"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/btn_spin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="70dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBackWheel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+    
+            <ImageView
+                android:id="@+id/imgBackWheel1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_spin"
+                android:scaleType="fitXY"/>
+    
+            <ImageView
+                android:id="@+id/imgWheel"
+                android:padding="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wheel_spin"
+                android:scaleType="fitXY"/>
+    
+            <ImageView
+                android:id="@+id/panahSpin"
+                android:src="@drawable/panah_spin"
+                android:paddingStart="80dp"
+                android:paddingTop="80dp"
+                android:paddingEnd="80dp"
+                android:paddingBottom="95dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    
+        <Button
+            android:id="@+id/btn_spin"
+            android:background="@drawable/btn_spin"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/imgBackWheel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
